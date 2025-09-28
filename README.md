@@ -2,6 +2,6 @@
 portfolio
 all are in python
 conectV3.1.py:connect four(saw a course on code acadamy)
-2.one player text based battle simulator infinite game(infinite summon)
-3.two player text based battle
+main:one player text based battle simulator infinite game(infinite summon)
+two_player_comV7.12.py:two player text based battle
 pyjs:coded in python to test the logic before moving over to java-script 
