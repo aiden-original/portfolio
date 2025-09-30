@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html style="margin: 5px 30px;">
+<div style="background-color:#bfa475">
+	<head>
+		<title>frace stuff</title>
+	</head>
+	<body >
+	 <div style= "background-color:#bfa475;text-align:center"><br>
+	  <header >
+		  <div>
+		   <h1 style="color:white;background-color:#655035;margin:0px 20px"><b>La Tour Eiffel<b></h1>
+		  </div>
+		  <h2>Paris, France</h2>
+	  </header>
+	  <p style="color:white;font-size:20px"><b>Constructed 1887-1889<b></p>
+	  <div >
+		<table>
+			<tr>
+				<td>
+       <div style="border-style:solid;border-color:white;">
+       <p style="margin: 5px 5px 2px 5px;">
+	   <img src="http://bit.ly/1UuWAmt" id="img" width="380" height="320" alt="La Tour Eiffel" style="border-style:solid;border-color:white;"> 
+       </p>
+       </div>
+	  <br><a href ="https://www.youtube.com/watch?v=r65KAj2sB0U" target="_top">See the construction of the Eiffel Tower</a>
+	  </td>
+	  <td>
+		  <h4 style="text-align:left"><b><u>The construction schedule</u></b><h4>
+			  <div class="list" style="font-size:15px;text-align:left"> 
+		  <ol><i>
+			<li>The first floor was completed on the 1st April 1888</li>
+			<li>The second floor was completed on the 14th August 1888</li>
+			<li>The top section was completed on the 31st March 1889</li>
+		  </ol><i></div>
+		  <h4 style="text-align:left"><b><u>Facts and figures</u></b></h4>
+		  <div class="list" style="font-size:15px;text-align:left"> 
+		  <ul><i>
+			  
+			  <li>The tower has 1665 steps</li>
+				<li>2.5 million rivets were used</li>
+				<li>7,300 tonnes of iron</li>
+				<li>60 tonnes of paint</li><i>
+		  </ul><div/>
+
+
+
+		</td>
+	  </tr>
+	  
+	  
+	  </div>
+	  </table>
+	    </div>
+	 
+	</body>
+</div>
+</html>
