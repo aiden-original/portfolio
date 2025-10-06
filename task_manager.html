@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<style>
+button{
+    color: white;
+    border-radius: 15px;
+}
+button:hover {
+    color:black;
+    
+    }
+</style>
+<body style="background-color:blue;">
+  <div style="display:flex;justify-content:center;">
+    <div style="display:flex;flex-direction:column;">
+    <div style="display:flex;justify-content:center">
+      	<h1>To Do App</h1>
+        
+      </div>
+      <div style="display:flex;justify-content:center;width:1000px">
+            <table id =table style="background-color:white;width:100%;border-radius: 10px;">
+                <th style="height: 100px;" >
+                    <input style="width:60%;height: 30px;" id ="task" placeholder="enter your task"> <input style="width: 300px;height: 30px;" id="date" placeholder="DD/MM/YYYY" type="date"> <button style="width: 50px;height: 30px;background-color:rgb(35, 35, 107) ;" onclick="add()">Add</button>
+                </th>
+            </table>
+        </div>
+    </div>
+  </div>
+<script>
+    let count = 0
+    
+    function add() {
+        let task= document.getElementById("task")
+        let date=document.getElementById("date")
+
+        let table = document.getElementById("table")
+        let row=table.insertRow(-1)
+        let cell=row.insertCell(-1)
+        cell.innerHTML=`
+        <div style="display:flex;justify-content:space-between">
+        <p class='counters total1' value="count">${count}</p><p class='total2'>${task.value}</p><p class='total3'>${date.value}</p>
+        <div style="display:flex;width:100px;justify-content:space-around;s">
+            <button style="background-color:green ;" onclick="undo(this)">undo</button><button style="background-color:red ;" onclick="del(this)">delete</button>
+        </div>
+        </div>
+        
+        `
+        task.value=""
+        date.value=""
+        count += 1
+    }
+    function del(x) {
+        
+        
+        let find = Number(x.closest("tr").querySelector("p").textContent)
+       
+        console.log(find,"find")
+        let table = document.getElementById("table")
+        count -= 1
+        table.deleteRow(find+1)
+
+        
+        let decrease = document.getElementsByClassName("counters")
+        
+        for (i in decrease) {
+            console.log(decrease[i].textContent,"decrease[i].textContent")
+            
+            if (decrease[i].textContent>find){
+                decrease[i].textContent=decrease[i].textContent-1
+            }
+            
+        }
+    }
+    function undo(x) {
+        let find = Number(x.closest("tr").querySelector("p").textContent)
+        let decrease = document.getElementsByClassName("total1")
+        
+        for (i in decrease) {
+            console.log(i,"i")
+            if (i==find){
+                decrease[i].style="text-decoration: line-through"
+            }
+            
+        }
+        decrease = document.getElementsByClassName("total2")
+        
+        for (i in decrease) {
+            if (i==find){
+                decrease[i].style="text-decoration: line-through"
+            }
+            
+        }
+        decrease = document.getElementsByClassName("total3")
+        
+        for (i in decrease) {
+            if (i==find){
+                decrease[i].style="text-decoration: line-through"
+            }
+            
+        }
+    }
+</script>  
+</body>
+</html>
