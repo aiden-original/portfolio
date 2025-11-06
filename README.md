@@ -2,7 +2,7 @@
 portfolio
 all are in python
 
-conectV3.1.py:connect four(saw a course on code acadamy)
+conectV3.1.py:connect four(inspired by a course on code acadamy)
 
 
 main   :   one player text based battle simulator infinite game(infinite summon)
