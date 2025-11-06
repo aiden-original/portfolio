@@ -1,6 +1,6 @@
 # portfolio
 portfolio
-all are in python
+
 
 conectV3.1.py:connect four(inspired by a course on code acadamy)
 
